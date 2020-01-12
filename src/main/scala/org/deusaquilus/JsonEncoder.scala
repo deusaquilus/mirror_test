@@ -33,8 +33,6 @@ object JsonEncoder {
           val labels = value.asInstanceOf[Product].productElementNames
           val keyValues = labels.zip(elems).map((k, v) => s"$k: $v")
           "{" + (keyValues).mkString(", ") + "}"
-        case other =>
-          throw new RuntimeException("mirror was an invalid value: " + other)
       }
   }
 
