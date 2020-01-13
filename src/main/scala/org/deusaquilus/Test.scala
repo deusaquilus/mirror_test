@@ -2,8 +2,6 @@ package org.deusaquilus
 
 import SummonJsonEncoderTest._
 
-case class PersonSimple(name:String, age:Int)
-
 object Test {
   val stuff = PersonSimple("Joe", 123)
 
